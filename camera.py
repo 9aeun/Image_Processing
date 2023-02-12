@@ -47,7 +47,6 @@ class cameraWindow(QMainWindow, form_class) : #카메라 윈도우
         self.W = 0
         self.B = 0
         self.O = 0
-
         width = int(self.cap.get(cv2.CAP_PROP_FRAME_WIDTH))
         height = int(self.cap.get(cv2.CAP_PROP_FRAME_HEIGHT))
         map_y, map_x = np.indices((height, width), dtype=np.float32) #map_x 는 [0~639](arange width) *480개, map_y는 [0~479] * 640개
