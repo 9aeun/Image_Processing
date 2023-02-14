@@ -17,7 +17,7 @@ from matplotlib import pyplot as plt
 
 form_class = uic.loadUiType("C:/photo_final/layout.ui")[0] # layout UI 불러오기
 
-class layoutWindow(QMainWindow, form_class) :
+class layoutWindow(QMainWindow, form_class) : 
     global image
     global count
     global image1, image2, image3, image4
@@ -26,9 +26,9 @@ class layoutWindow(QMainWindow, form_class) :
     def __init__(self) :
         super().__init__()
         self.setupUi(self)
-        self.loadButton.clicked.connect(self.loadImage)
-        self.saveButton.clicked.connect(self.save)
-        self.homeButton.clicked.connect(self.home)
+        self.loadButton.clicked.connect(self.loadImage) #사진 불러오기 버튼
+        self.saveButton.clicked.connect(self.save) #사진 저장 버튼
+        self.homeButton.clicked.connect(self.home) # 메인화면으로 돌아가는 버튼
 
     def loadImage(self) :
         global count
