@@ -22,7 +22,7 @@ class photoWindow(QMainWindow, form_class) : # 사진 편집 기능
     global qImg
     global pixmap    
     global originPixmap
-    global isOrigin
+    global isOrigin 
     global isGray
     isGray = False
     # global isDragging
@@ -149,7 +149,7 @@ class photoWindow(QMainWindow, form_class) : # 사진 편집 기능
         self.fname, _ = QFileDialog.getSaveFileName(self, 'Save Image Files', './', 'image files(*.jpg)' , options = QFileDialog.DontUseNativeDialog)
         cv2.imwrite(self.fname, self.image)
 
-    def cut(self) :
+    def cut(self) : #이미지 자르기
         src = self.image
         x, y, w, h = cv2.selectROI('cut_image', cv2.cvtColor(src, cv2.COLOR_RGB2BGR), False)
         if w and h :
