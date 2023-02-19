@@ -127,7 +127,7 @@ class photoWindow(QMainWindow, form_class) : # 사진 편집 기능
     #     else :
     #         break
 
-    def mosaic(self) :  #고쳐야 할 점 : mouse함수로 바꾸어서 select ROI를 사용하지 않음으로써 새 창이 뜨지 않도록
+    def mosaic(self) : #모자이크
         rate = 10
         while True :
             src = self.image.copy()
