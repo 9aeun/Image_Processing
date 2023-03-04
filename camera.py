@@ -14,7 +14,7 @@ form_class = uic.loadUiType("C:/photo_final/camera.ui")[0]
 class cameraWindow(QMainWindow, form_class) : #카메라 윈도우
     global img #전역변수 이미지
     global cap #전역변수 캡쳐
-    global LR 
+    global LR #좌우반전
     global UD
     global W
     global B
