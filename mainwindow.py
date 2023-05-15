@@ -30,7 +30,7 @@ class mainWindow(QMainWindow, form_class) : # main 화면이 보이는 window cl
         self.w.show()
 
 
-    def showLayout(self) : # 레이아웃 버튼 눌렀을 때, layout.py가 새창으로 나오도록, 이전 창은 없어지지 않음
+    def showLayout(self) : # 레이아웃 버튼 눌렀을 때, layout.py가 새창으로 나오도록
         self.w = layoutWindow()
         self.w.show()
 
