@@ -14,7 +14,7 @@ from PyQt5.QtGui import *   # 사진 불러오기
 import urllib.request       # 사진 불러오기
 from PyQt5.QtCore import Qt, QSize
 from matplotlib import pyplot as plt
-
+   
 form_class = uic.loadUiType("C:/photo_final/layout.ui")[0] # layout UI 불러오기
 
 class layoutWindow(QMainWindow, form_class) : 
