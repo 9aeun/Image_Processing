@@ -7,7 +7,7 @@ import sys
 from camera import cameraWindow
 from photo import photoWindow
 from layout import layoutWindow
-
+   
 form_class = uic.loadUiType("C:/photo_final/main.ui")[0] 
 
 class mainWindow(QMainWindow, form_class) : # main 화면이 보이는 window class
