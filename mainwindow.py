@@ -16,7 +16,7 @@ class mainWindow(QMainWindow, form_class) : # main 화면이 보이는 window cl
         global w
         super().__init__()
         self.setupUi(self) #UI파일을 파이썬 코드에서 로드
-
+   
         self.cameraButton.clicked.connect(self.showCamera) # 사진 찍기 버튼 
         self.photoButton.clicked.connect(self.showPhoto)   # 사진 편집 버튼
         self.layoutButton.clicked.connect(self.showLayout) # 레이아웃 버튼
